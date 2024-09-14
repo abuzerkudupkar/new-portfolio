@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: 'Noto sans';
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 20vh;
+  background: lightgrey;
+  display: flex;
+  justify-content: center;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+header nav h1 {
+  font-size: 40px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 0 20px;
+}
+
+header nav ul li {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+
+  header nav h1 {
+    font-size: 25px;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  header nav ul li {
+    font-size: 14px;
+  }
+}
+
+/* Main */
+
+main {
+  position: relative;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+main h1 {
+  font-size: 60px;
+}
+
+@media (max-width: 720px) {
+  main {
+    height: 70vh;
+  }
+
+  main h1 {
+    font-size: 30px;
+  }
+}
+
+/* About us */
+#about {
+  width: 100%;
+}
+
+.education-detail h1,
+.skills-detail h1 {
+  width: 100%;
+  height: 10vh;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.education-detail {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 40px;
+  padding: 30px;
+}
+
+.education-detail h3 {
+  font-size: 30px;
+}
+
+.education-detail p {
+  font-size: 20px;
+}
+
+@media (max-width: 720px) {
+  .education-detail h1,
+  .skills-detail h1 {
+    font-size: 30px;
+  }
+
+  .education-detail h3 {
+    font-size: 20px;
+  }
+
+  .education-detail p {
+    font-size: 16px;
+  }
+}
+
+.skills-detail {
+  line-height: 40px;
+  padding: 30px;
+}
+
+.skills-detail h3 {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgrey;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.skills-detail .html {
+  width: 80%;
+}
+
+.skills-detail .css {
+  width: 70%;
+}
+
+.skills-detail .javascript {
+  width: 50%;
+}
+
+.skills-detail .tailwind {
+  width: 60%;
+}
+
+@media (max-width: 720px) {
+  .skills-detail h3 {
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 16px;
+  }
+
+  .skills-detail {
+    padding: 0 10px;
+  }
+}
+
+/* Project */
+/* Contact us */
+footer {
+  background-color: lightgrey;
+  padding: 30px;
+}
+
+footer .contact-info {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+footer p span {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  footer {
+    text-align: center;
+  }
+
+  footer .contact-info {
+    display: block;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+
+  footer p span {
+    font-size: 14px;
+  }
+
+  footer h2 {
+    font-size: 16px;
+  }
+}
